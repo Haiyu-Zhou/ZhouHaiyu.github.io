@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-Italic.woff2') format('woff2'),
+      url('NotoSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-BoldItalic.woff2') format('woff2'),
+      url('NotoSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans.woff2') format('woff2'),
+      url('NotoSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-Bold.woff2') format('woff2'),
+      url('NotoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Noto Sans Traditional Chinese*/
+@font-face {
+  font-family: 'NotoSansTC-Regular';
+  src: url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff2') format('woff2'),
+      url('assets/fonts/NotoSansTC/NotoSansTC-Regular-Alphabetic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body{
+    margin:0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: white;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px black solid;
+  }
+
+#menu{
+  width:30vw;
+    position: fixed;
+    left:0vw;
+    top:5vh;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 20pt;
+}
+
+#Chinese-name{
+font-size: 30pt;
+}
+
+#parent-A {
+  display: flex;
+  flex-direction: row;
+}
+
+.child-A {
+}
+
+#child-A1 {
+  width: 30vw;
+  top:0;
+  bottom: 0;
+  border-right: 2pt black solid;
+}
+
+#child-A2 {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder {
+  color: white;
+  border: 2pt black solid;
+  width: 105vh;
+  height: 70vh;
+  margin-top: 5vh;
+}
+
+a {
+  color:black;
+}
+a:hover{
+text-decoration: none;
+}
+
+.works:hover{
+  color: rgb(47, 47, 172);
+}
+
+#Studio-text{
+  font-size: 30pt;
+}
