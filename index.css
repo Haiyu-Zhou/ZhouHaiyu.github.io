@@ -1,7 +1,27 @@
+/*@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("assets/fonts/Inter Web/Inter-Thin.woff2") format("woff2"),
+    url("assets/fonts/Inter Web/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("assets/fonts/Geometria/Geometria-Light.woff2") format("woff2"),
+    url("assets/fonts/Geometria/Geometria-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/*Noto Sans*/
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-Italic.woff2') format('woff2'),
-      url('NotoSans-Italic.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-Italic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -9,8 +29,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-BoldItalic.woff2') format('woff2'),
-      url('NotoSans-BoldItalic.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -18,8 +38,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans.woff2') format('woff2'),
-      url('NotoSans.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,8 +47,8 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-Bold.woff2') format('woff2'),
-      url('NotoSans-Bold.woff') format('woff');
+  src: url('assets/fonts/NotoSans/NotoSans-Bold.woff2') format('woff2'),
+      url('assets/fonts/NotoSans/NotoSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -44,90 +64,144 @@
   font-display: swap;
 }
 
+/* Lustria*/
 
-
-body{
-    margin:0;
-    padding: 0;
-}
-body::-webkit-scrollbar {
-    width: 20px;
-  }
-
-  body {
-    scrollbar-width: thin;
-    scrollbar-color: white white;
-  }
-
-  body::-webkit-scrollbar-track {
-    background: white;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: white;
-    border: 2px black solid;
-  }
-
-#menu{
-  width:30vw;
-    position: fixed;
-    left:0vw;
-    top:5vh;
-    font-family: 'Noto Sans TC', sans-serif;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+@font-face {
+  font-family: 'Lustria';
+  src: url('assets/fonts/Lustria-Regular.ttf') format('ttf');
 }
 
-.title{
-    font-size: 20pt;
+
+
+
+
+
+/*Styles*/
+*{
+  box-sizing: border-box;
 }
 
-#Chinese-name{
-font-size: 30pt;
+body {
+    font-family: 'Lustria';
+    font-weight: normal;
+  font-style: normal;
+    font-size: 80pt;
+    margin: 0%;
+    background-color: black;
+    background-attachment: fixed;
+    height: 300vh;
 }
 
-#parent-A {
-  display: flex;
-  flex-direction: row;
+div#background{
+  background-color: black;
+  position: absolute;
+  top:-5vh;
+  height: 100vh;
 }
 
-.child-A {
-}
-
-#child-A1 {
-  width: 30vw;
-  top:0;
-  bottom: 0;
-  border-right: 2pt black solid;
-}
-
-#child-A2 {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.placeholder {
-  color: white;
-  border: 2pt black solid;
-  width: 105vh;
-  height: 70vh;
-  margin-top: 5vh;
-}
 
 a {
-  color:black;
+    color:black;
 }
 a:hover{
-text-decoration: none;
+  text-decoration: none;
 }
 
-.works:hover{
-  color: rgb(47, 47, 172);
+.lab-assignments:hover{
+  color:rgb(11, 119, 190);
 }
+
+
+#top-bar{
+  font-size: 20pt;
+  position:sticky;
+  top:1%;
+  right:1%;
+  text-align: right;
+  color:black;
+  text-decoration: underline;
+}
+
 
 #Studio-text{
-  font-size: 30pt;
+margin-top: 50px;
 }
+
+#Lab-text{
+  margin-top: 50px;
+  }
+
+
+
+  #Studio-title{
+    font-size: 130pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #Lab-title{
+    font-size: 130pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p{
+    display: inline-block;
+    text-decoration: underline;
+  }
+
+  p:hover{
+    text-decoration: none;
+   
+  }
+
+  #info{
+    position:relative;
+    margin-top: 0px;
+    line-height: 1;
+    height: 30vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-text{
+    text-decoration: none;
+    color:white;
+    margin: 0;
+    font-size: 20pt;
+  }
+
+  div#info-left{
+    display: flex;
+    flex-direction: column;
+  }
+  div#info-right{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  div.info-section{
+    margin: 2vh;
+    text-align: right;
+  }
+
+  div#section-1{
+    background-color: white;
+    z-index: 1000;
+    height:200vh;
+  }
+
+  a.info-text:hover{
+    color:rgb(11, 119, 190);
+  }
+
+  img.title-img{
+    position: relative;
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+  }
